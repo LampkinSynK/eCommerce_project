@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDMX</title>
+    <link rel="stylesheet" href="styles/homestyle.css">   
+    <link rel="stylesheet" href="styles/universal.css"> 
+</head>
+<header>
+    <nav class="navbar" id="navbar">
+        <a></a>
+        <a href="index.html"><img src="images/JDMX Logo.png" class='logo' width="125px" height="125px"></a>
+        <a class="nav_items_right" href="#">Vehicles</a>
+        <a class="nav_items" href="#">Import</a>
+        <a class="nav_items" href="#">Trending</a>
+        <a class="nav_items" href="#">Brands</a>
+        <a class="search_icon" href="#"><img src="assets/search.png" width="25px"></a>
+        <a class="login_icon" href="#"><img src="assets/usericon.png" width="30px"></a>
+    </nav>
+</header>
+<body>
+    <button class="back_btn" onclick="changeVideoBack()"><</button>
+    <button class="forward_btn" onclick="changeVideo()">></button>
+
+    <section class="car_carousel">
+        <div onclick="pauseOrPlay()" class="videos">
+            <video id="video1" class="video1" autoplay muted>
+                <source src="videos/S2000.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="video2" class="video2" muted>
+                <source src="videos/NSX.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="video3" class="video3" muted>
+                <source src="videos/GTR.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video id="video4" class="video4" muted>
+                <source src="videos/Miata.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+</body>
+<footer class="footerbar">
+    <div class="foot_about">hello</div>
+    <div class="foot_contact"></div>
+    <div class="foot_shop"></div>
+    <div class="placeholder"></div>
+    <div class="bottom_text"></div>
+    <div class="bottom_text_right"></div>
+</footer>
+<script src="script.js"></script>
+</html>

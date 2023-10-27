@@ -1,0 +1,44 @@
+@font-face {
+    font-family: newHelvetica;
+    src: url(fonts/helv.ttf);
+}
+
+
+.videos > video {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    transition: all 1.2 linear;
+    z-index: -10;
+}
+
+.car_carousel {
+    display: flex;
+}
+
+.video1 {
+    opacity: 1;
+}
+
+.video2 {
+    opacity: 0;
+}
+
+.video3 {
+    opacity: 0;
+}
+.video4 {
+    opacity: 0;
+}
+
+.forward_btn {
+    float: right;
+    
+}
+
+.back_btn {
+    
+    position: absolute;
+}
