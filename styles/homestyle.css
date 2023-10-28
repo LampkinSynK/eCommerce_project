@@ -1,17 +1,20 @@
-@font-face {
+xs@font-face {
     font-family: newHelvetica;
     src: url(fonts/helv.ttf);
 }
 
 
 .videos > video {
-    max-width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 40vw;
     object-fit: cover;
     overflow: hidden;
     position: absolute;
     transition: all 1.2 linear;
     z-index: -10;
+    object-fit: cover;
+    position: absolute;
+    
 }
 
 .car_carousel {
