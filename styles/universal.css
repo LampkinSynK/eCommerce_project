@@ -1,7 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-family: Helvetica, sans-serif;
     font-size: 40px;
     color: rgb(255, 255, 255);
     margin: 0;
@@ -81,5 +80,47 @@ footer {
 .footerbar {
     display: grid;
     grid-template-columns: repeat(4, 25vw);
-    grid-template-rows: 70vh 30vh;
+    grid-template-rows: 60vh 20vh;
+}
+
+h6 {
+    font-size: 3vh;
+}
+
+.bottom_text, .bottom_text > a {
+    grid-area: 2/ 1/ 2/ 3;
+    text-align: center;
+    font-size: 1.8vh;
+}
+
+.footerbar > ul > li {
+    list-style-type: none;
+    font-size: 1.8vh;
+    color: rgb(189, 188, 188);
+    word-spacing: .1vw;
+    margin-top: 1em;
+}
+
+.footerbar > ul {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.social_media {
+    font-size: 2vh;
+}
+
+.foot_explore > h6{
+    font-size: 7vh;
+}
+
+.foot_explore > li {
+    display: inline-block;
+    word-spacing: .2vw !important; 
+    margin-top: 10px;
+}
+
+.bottom_text_right {
+    font-size: 1.8vh;
 }

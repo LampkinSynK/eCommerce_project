@@ -5,6 +5,7 @@
 
 
 .videos > video {
+    box-shadow: inset 0px 0px 36px 36px rgba(0,0,0,0.75);
     width: 100vw;
     height: 40vw;
     object-fit: cover;
@@ -19,6 +20,7 @@
 
 .car_carousel {
     display: flex;
+    
 }
 
 .video1 {
