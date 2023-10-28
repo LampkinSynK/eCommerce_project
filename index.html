@@ -20,11 +20,8 @@
     </nav>
 </header>
 <body>
-    <button class="back_btn" onclick="changeVideoBack()"><</button>
-    <button class="forward_btn" onclick="changeVideo()">></button>
-
     <section class="car_carousel">
-        <div onclick="pauseOrPlay()" class="videos">
+        <div class="videos">
             <video id="video1" class="video1" autoplay muted>
                 <source src="videos/S2000.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -43,13 +40,21 @@
             </video>
         </div>
     </section>
+
+    <section class="change_buttons">
+        <button class="back_btn" onclick="changeVideoBack()"><</button>
+        <button class="forward_btn" onclick="changeVideo()">></button>
+        <button onclick="pauseOrPlay()" class="pause_btn"><img src="assets/pause.png" width="25vw"></button>
+    </section>
+
+    
 </body>
 <footer class="footerbar">
-    <div class="foot_about">hello</div>
-    <div class="foot_contact"></div>
-    <div class="foot_shop"></div>
-    <div class="placeholder"></div>
-    <div class="bottom_text"></div>
+    <div class="foot_explore"><h6>Explore JDMX</h6></div>
+    <div class="foot_contact"><h6>Connect With Us</h6></div>
+    <div class="foot_shop"><h6>Shopping Tools</h6></div>
+    <div class="foot_about">About JDMX</div>
+    <div class="bottom_text">© JDMX of America, Inc. Use of this site signifies your acceptance of the <a href="#">Terms & Conditions</a>.</div>
     <div class="bottom_text_right"></div>
 </footer>
 <script src="script.js"></script>

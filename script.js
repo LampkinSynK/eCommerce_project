@@ -4,30 +4,32 @@ const video3 = document.getElementById('video3');
 const video4 = document.getElementById('video4');
 const videos = [video1, video2, video3, video4];
 let videoIndex = 0;
+let pausedAt = 0;
+
 
 video1.onended = function () {
-    videoIndex=0;
+    videoIndex=1;
     video2.play();
     video1.style.opacity=0;
     video2.style.opacity=1;
 }
 
 video2.onended = function () {
-    videoIndex=1;
+    videoIndex=2;
     video3.play();
     video2.style.opacity=0;
     video3.style.opacity=1;
 }
 
 video3.onended = function () {
-    videoIndex=2;
+    videoIndex=3;
     video4.play();
     video3.style.opacity=0;
     video4.style.opacity=1;
 }
 
 video4.onended = function () {
-    videoIndex=3;
+    videoIndex=0;
     video1.play();
     video4.style.opacity=0;
     video1.style.opacity=1;
@@ -108,10 +110,12 @@ changeVideoBack = () => {
 }
 
 pauseOrPlay = () => {
-    if (videos[videoIndex].currentTime === 0) {
+    if (videos[videoIndex].currentTime === pausedAt) {
         videos[videoIndex].play();
+        pausedAt = null;
     }
     else {
         videos[videoIndex].pause();
+        pausedAt = videos[videoIndex].currentTime;
     }
 }

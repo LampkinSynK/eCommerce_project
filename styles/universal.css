@@ -21,6 +21,7 @@ footer {
     margin-top: 100vh;
     align-items: center;
     width: 100%;
+    height: 100vh;
     background: rgb(27,20,20);
     background: radial-gradient(circle, rgba(27,20,20,1) 0%, rgba(0,0,0,1) 0%, rgba(15,5,5,1) 100%);
 }
@@ -75,4 +76,10 @@ footer {
 
 .login_icon:hover {
     filter: invert(100%);
+}
+
+.footerbar {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: 70vh 30vh;
 }
