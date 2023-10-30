@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+body {
+    background: black;
+}
+
 .navbar {
     display: flex;
     align-items: center;

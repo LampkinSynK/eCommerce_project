@@ -119,3 +119,30 @@ pauseOrPlay = () => {
         pausedAt = videos[videoIndex].currentTime;
     }
 }
+
+
+
+newJDM = () => {
+    document.getElementById('firstCar').src = "images/nsx.jpg";
+    document.getElementById('secondCar').src = "images/supra.jpg";
+    document.getElementById('thirdCar').src = "images/miata.jpg";
+
+}
+
+imported = () => {
+    document.getElementById('firstCar').src = "images/wrx.jpg"; //Type R STI 2001
+    document.getElementById('secondCar').src = "images/silvia.jpg"; //1998 s15 Silvia
+    document.getElementById('thirdCar').src = "images/datsun.jpg"; //Datsun 280z 1971
+}
+
+oldJDM = () => {
+    document.getElementById('firstCar').src = "images/rx7.avif"; //1993
+    document.getElementById('secondCar').src = "images/skyline.jpg"; //1999
+    document.getElementById('thirdCar').src = "images/eclipse.jpg"; //1998
+}
+
+earlyJDM = () => {
+    document.getElementById('firstCar').src = "images/lancer.png"; // 2008
+    document.getElementById('secondCar').src = "images/s2000.jpg"; //2009
+    document.getElementById('thirdCar').src = "images/GTR.jpg"; //2017
+}

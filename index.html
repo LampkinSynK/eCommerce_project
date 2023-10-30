@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JDMX</title>
     <link rel="stylesheet" href="styles/homestyle.css">   
-    <link rel="stylesheet" href="styles/universal.css"> 
+    <link rel="stylesheet" href="styles/universal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <header>
     <nav class="navbar" id="navbar">
         <a></a>
-        <a href="index.html"><img src="images/JDMX Logo.png" class='logo' width="125px" height="125px"></a>
+        <a href="index.html"><img src="images/JDMX Logo.png" class='logo' width="100px" height="100px"></a>
         <a class="nav_items_right" href="#">Vehicles</a>
         <a class="nav_items" href="#">Import</a>
         <a class="nav_items" href="#">Trending</a>
@@ -42,9 +43,57 @@
     </section>
 
     <section class="change_buttons">
-        <button class="back_btn" onclick="changeVideoBack()"><</button>
-        <button class="forward_btn" onclick="changeVideo()">></button>
+        <button class="back_btn" onclick="changeVideoBack()"><span class="material-symbols-outlined">
+            arrow_back_ios
+            </span></button>
+        <button class="forward_btn" onclick="changeVideo()"><span class="material-symbols-outlined">
+            arrow_forward_ios
+            </span></button>
         <button onclick="pauseOrPlay()" class="pause_btn"><img src="assets/pause.png" width="25vw"></button>
+    </section>
+
+    <section class="car_body">
+        <h3>Explore All Vehicles</h3>
+        <div class="lineup">
+            <a onclick="newJDM()">New JDM</a>
+            <a onclick="imported()">Imported</a>
+            <a onclick="oldJDM()">90's JDM</a>
+            <a onclick="earlyJDM()">2000's JDM</a>
+        </div>
+        <div class="line"></div>
+        <div class="sell_carousel">
+            <div class="first_car">
+                <div class="description">
+                    <p>2023 | Hybrid Available</p>
+                    <h5>Acura NSX</h5>
+                    <p>Drive Fast, Save Fast</p>
+                    <div class="prices"> <div class="money">$169,000<p class="money_text">Starting MSRP *</p></div> <div class="mpg">22/21<p>Up to Est. MPG *</p></div></div>
+                    <button>Explore</button>
+                </div>
+                <img id="firstCar" src="images/nsx.jpg" alt="nsx">
+            </div>
+            <div class="second_car">
+                <div class="description">
+                    <p>2023 | Hybrid Available</p>
+                    <h5>Toyota Supra</h5>
+                    <p>Drive Fast, Save Fast</p>
+                    <div class="prices"> <div class="money">$44,640<p class="money_text">Starting MSRP *</p></div> <div class="mpg">25/31<p>Up to Est. MPG *</p></div></div>
+                    <button>Explore</button>
+                    
+                </div>
+                <img id="secondCar" src="images/supra.jpg" alt="supra">
+            </div>
+            <div class="third_car">
+                <div class="description">
+                    <p>2023 | Hybrid Available</p>
+                    <h5>Mazda MX-5</h5>
+                    <p>Drive Fast, Save Fast</p>
+                    <div class="prices"> <div class="money">$28,050<p class="money_text">Starting MSRP *</p></div> <div class="mpg">26/34<p>Up to Est. MPG *</p></div></div>
+                    <button>Explore</button>
+                </div>
+                <img id="thirdCar" src="images/miata.jpg" alt="miata">
+            </div>
+        </div>
     </section>
 
     
