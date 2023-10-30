@@ -118,7 +118,7 @@
 .sell_carousel {
     display: grid;
     grid-template-columns: repeat(6, 320px);
-    grid-template-rows: repeat(4, 200px);
+    grid-template-rows: repeat(2, 200px);
     gap: 2px;
 }
 
@@ -254,6 +254,14 @@
     
 }
 
+.money > span {
+    font-size: 24px;
+}
+
+.mpg > span {
+    font-size: 24px;
+}
+
 .money_text {
     font-size: 10px;
     color: gainsboro;
@@ -284,4 +292,10 @@
 }
 .move_right {
     margin-left: 45px;
+}
+
+.shopping_head {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
