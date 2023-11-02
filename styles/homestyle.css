@@ -1,13 +1,10 @@
-
-
-
 .videos > video {
     width: 100%;
     height: 34vw;
     object-fit: cover;
     overflow: hidden;
     position: absolute;
-    transition: all 1.2 linear;
+    transition: all 1.2s linear;
     z-index: -10;
     object-fit: cover;
     position: absolute;
@@ -127,7 +124,6 @@
 .first_car {
     grid-area: 1/1/3/3;
     background-color: rgb(128, 95, 95);
-    color: orange;
     border-radius: 20px;
     width: 575px;
     height: 300px;
@@ -227,7 +223,6 @@
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     cursor: pointer;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
     transition: all .4s;
 }
@@ -331,7 +326,6 @@
 
 .help_selection:hover {
     background-position: 100% 100%;
-    font-size: 1000px;
 } 
 
 .discover > h1 {
@@ -372,3 +366,174 @@
     background-color: rgba(0, 0, 0, 0.06);
     transition: background .2s;
 }
+
+@media screen and (max-width: 1247px) {
+    .sell_carousel {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 320px);
+        grid-template-rows: repeat(6, 200px);
+        gap: 2px;
+        overflow: scroll;
+    }
+    .first_car {
+        grid-area: 1/1/3/3;
+    }
+
+    .second_car {
+        grid-area: 3/1/5/3;
+    }
+
+    .third_car {
+        grid-area: 5/1/6/3;
+    }
+
+    .help_desk {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-rows: 500px 500px;
+        gap: 1vw;
+    }
+
+    .help_selection > p {
+        font-size: 4vw;
+        font-weight: bold;
+        align-self: center;
+    }
+}
+    
+    @media screen and (max-width: 908px){
+        .lineup{
+            display: none;
+        }
+        .line {
+            display: none;
+        }
+
+        .videos > video {
+            width: 100%;
+            height: 40vw;
+            object-fit: cover;
+            overflow: hidden;
+            position: absolute;
+            transition: all 1.2s linear;
+            z-index: -10;
+            object-fit: cover;
+            position: absolute;
+            
+        }
+
+        .forward_btn {
+            margin: auto;
+            grid-area: 2/ 5/ 3/ 5;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 90vw;
+            font-size: 2vw;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.45);
+            outline: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .back_btn {
+            margin: auto;
+            grid-area: 2/ 1/ 3/ 1;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 90vw;
+            font-size: 2vw;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.45);
+            outline: none;
+            color: rgb(0, 0, 0);
+        }
+        
+        .change_buttons {
+            display: grid;
+            justify-content: center;
+            grid-template-rows: repeat(5, 6.8vw);
+            grid-template-columns: repeat(5, 20vw);
+        }
+        
+        .pause_btn {
+            margin: auto;
+            grid-area: 4/ 1/ 5/ 1;
+            width: 40px;
+            cursor: pointer;
+            border-radius: 90vw;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.45);
+            outline: none;
+            transform: scale(.8);
+        }
+    }
+
+    @media screen and (max-width: 638px) and (min-width: 280px) {
+        .first_car {
+            transform: scale(.6);
+        }
+
+        .first_car:hover {
+            transform: none !important;
+        }
+
+        .second_car {
+            transform: scale(.6);
+        }
+
+        .second_car:hover {
+            transform: none !important;
+        }
+
+        .third_car {
+            transform: scale(.6);
+        }
+
+        .third_car:hover {
+            transform: none !important;
+        }
+        
+        .chatrepair p {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 280px){
+        .sell_carousel {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(6, 120px);
+            gap: 2px;
+            overflow: scroll;
+        }
+        
+        .first_car {
+            transform: scale(.45);
+        }
+
+        .first_car:hover {
+            transform: none !important;
+        }
+
+        .second_car {
+            transform: scale(.45);
+        }
+
+        .second_car:hover {
+            transform: none !important;
+        }
+
+        .third_car {
+            transform: scale(.45);
+        }
+
+        .third_car:hover {
+            transform: none !important;
+        }
+        
+    }
