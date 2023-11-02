@@ -1,0 +1,144 @@
+.prod_button {
+    margin-left: 120px;
+    margin-top: 25px;
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 20px;
+    padding: 10px 25px 10px 25px;
+    border: 0;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: all .4s;
+}
+
+.prod_button:hover {
+    background-color: rgba(255, 255, 255, 0.26);
+    transition: all .4s;
+}
+
+section > h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.trend_grid > div:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.trend_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 470px);
+    gap: 12px;
+}
+
+.trend_grid > div {
+    transition: all .5s;
+    width: 75%;
+    height: 425px;
+    background-color: rgba(255, 139, 139, 0.562);
+    margin: auto;
+    border-radius: 18px
+}
+
+.trend_grid > div > img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.prod_info > p {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px rgba(0, 0, 0, 0.226);
+}
+
+.costmpg {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+
+.price {
+    flex-direction: column;
+}
+
+.price > p{
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px rgba(0, 0, 0, 0.226);
+    font-size: 30px;
+}
+
+.mpg > p {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px rgba(0, 0, 0, 0.226);
+    font-size: 30px;
+}
+
+.disclaimer {
+    font-size: 18px !important;
+}
+
+.import_grid > div:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.import_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 470px);
+    gap: 12px;
+}
+
+.import_grid > div {
+    transition: all .5s;
+    width: 75%;
+    height: 425px;
+    background-color: rgba(255, 139, 139, 0.562);
+    margin: auto;
+    border-radius: 18px
+}
+
+.import_grid > div > img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.inv_grid > div:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.inv_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 470px);
+    grid-template-rows: repeat(4, 434px);
+    gap: 12px;
+}
+
+.inv_grid > div {
+    transition: all .5s;
+    width: 75%;
+    height: 425px;
+    background-color: rgba(255, 139, 139, 0.562);
+    margin: auto;
+    border-radius: 18px
+}
+
+.inv_grid > div > img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
