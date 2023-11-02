@@ -6,15 +6,18 @@
     margin: 0;
 }
 
+/* HTML universal Styling */
 html {
     scroll-behavior: smooth;
     width: 100%;
+    max-width: max-content;
 }
 
 body {
     background: black;
 }
 
+/* Begin nav & footer styling */
 #mobilenav {
     display: none;
 }
@@ -206,6 +209,8 @@ h6 {
 .active {
     margin-left: auto;
 }
+/* End Nav & Footer Styling */
+/* Nav and Footer Responsiveness */
 @media screen and (max-width: 970px){
     .mainfoot {
         flex-direction: column;

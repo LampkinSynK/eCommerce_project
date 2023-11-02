@@ -1,3 +1,4 @@
+// Video Variables
 const video1 = document.getElementById('video1');
 const video2 = document.getElementById('video2');
 const video3 = document.getElementById('video3');
@@ -6,7 +7,7 @@ const videos = [video1, video2, video3, video4];
 let videoIndex = 0;
 let pausedAt = 0;
 
-
+// Mobile Nav
 function mobiletab() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
@@ -17,6 +18,7 @@ function mobiletab() {
   }
 
 
+//   Video Slideshow
 video1.onended = function () {
     videoIndex=1;
     video2.play();
@@ -130,8 +132,9 @@ pauseOrPlay = () => {
     }
 }
 
+// End Video Slideshow
 
-
+// Car cards
 newJDM = () => {
     document.getElementById('firstCar').src = "images/nsx.jpg";
     document.getElementById('car_text_1').innerHTML = '2023 | Hybrid Available';
@@ -217,7 +220,32 @@ earlyJDM = () => {
     document.getElementById('mpg_3').innerHTML = '22/16';
 }
 
+changeFunc = () => {
+    var selectbox = document.getElementById("selectBox");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    switch (selectedValue) {
+        case '1':
+            newJDM()
+            break;
+        case '2':
+            imported();
+            break;
+        case '3':
+            oldJDM();
+            break;
+        case '4':
+            earlyJDM();
+            break;
+
+    }
+}
+
+
+// Window Redirects
 chat = () => {
     window.location.replace("contact.html");
 }
 
+inv = () => {
+    window.location.replace("inventory.html");
+}

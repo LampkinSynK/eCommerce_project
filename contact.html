@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="styles/contact.css">
 </head>
 <header>
+    <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <a></a>
-        <a href="index.html"><img src="images/JDMX Logo.png" class='logo' width="100px" height="100px"></a>
+        <a href="index.html"><img src="images/JDMX Logo.png" alt="JDMXHome" class='logo' width="100px" height="100px"></a>
         <a class="nav_items_right" href="inventory.html#all">Vehicles</a>
         <a class="nav_items" href="inventory.html#import">Import</a>
         <a class="nav_items" href="inventory.html#trending">Trending</a>
         <a class="nav_items" href="contact.html">Support</a>
-        <a class="search_icon" href="#"><img src="assets/search.png" width="25px"></a>
-        <a class="login_icon" href="login.html"><img src="assets/usericon.png" width="30px"></a>
+        <a class="search_icon" href="#"><img src="assets/search.png" width="25px" alt="search"></a>
+        <a class="login_icon" href="login.html"><img src="assets/usericon.png" width="30px" alt="login"></a>
     </nav>
+    <!-- Mobile Nav -->
     <nav class="navbar" id="mobilenav"> 
         <div class="flex_nav">
             <a href="javascript:void(0);" class="icon" onclick="mobiletab()"><img src="assets/hamburger.png" alt="hamburger" height="50px" width="50px"></a>
@@ -33,26 +35,28 @@
     </nav>
 </header>
 <body>
+    <!-- Form Content -->
     <section class="chat_form">
         <form>
             <h1 class="contact_header">Contact Us</h1>
             <div class="full_name">
                 <label for="fname">YOUR NAME*</label>
                 <div class="forms">
-                    <input type="text" id="fname" name="fname" placeholder="John" style="width: 20vw; height: 5vh;"><br><br>
-                    <input type="text" id="lname" name="lname" placeholder="Doe" style="width: 20vw; height: 5vh;"><br><br>
+                    <input type="text" id="fname" name="fname" placeholder="John"><br><br>
+                    <input type="text" id="lname" name="lname" placeholder="Doe"><br><br>
                 </div>
             </div>
-            <label for="lname">EMAIL ADDRESS*</label>
-            <input type="text" id="email" name="email" placeholder="Eg. Example@gmail.com" style="width: 42vw; height: 5vh;"><br><br>
-            <label for="lname">PHONE NUMBER*</label>
-            <input type="text" id="p_num" name="p_num" placeholder="Eg. (XXX)XXX-XXXX" style="width: 42vw; height: 5vh;"><br><br>
-            <label for="lname">MESSAGE*</label>
-            <input type="text" id="message" name="message" placeholder="Please enter your comments..." style="width: 42vw; height: 200px;"><br><br>
-            <input id="submit_btn" type="submit" value="Send" style="width: 150px; height: 45px;">
+            <label for="email">EMAIL ADDRESS*</label>
+            <input type="text" id="email" name="email" placeholder="Eg. Example@gmail.com"><br><br>
+            <label for="p_num">PHONE NUMBER*</label>
+            <input type="text" id="p_num" name="p_num" placeholder="Eg. (XXX)XXX-XXXX" style=><br><br>
+            <label for="message">MESSAGE*</label>
+            <input type="text" id="message" name="message" placeholder="Please enter your comments..." style=><br><br>
+            <input id="submit_btn" type="submit" value="Send" style="width: 150px; height: 45px;" onclick="isValid()">
           </form>
     </section>
 </body>
+<!-- Footer -->
 <footer class="footerbar">
     <div class="mainfoot">
         <ul class="foot_explore"><p style="font-size: 50px; font-weight: bold;">Explore JDMX</p>
@@ -98,5 +102,6 @@
         Chinese 中文 |
         Español</div>
 </footer>
+<script src="forms.js"></script>
 <script src="script.js" defer></script>
 </html>

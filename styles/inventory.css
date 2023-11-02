@@ -1,3 +1,4 @@
+/* Inventory Button Styling */
 .prod_button {
     margin-left: 120px;
     margin-top: 25px;
@@ -24,6 +25,8 @@
     transition: all .4s;
 }
 
+/* Product Grid */
+/* All Card styling Below */
 section > h1 {
     display: flex;
     justify-content: center;

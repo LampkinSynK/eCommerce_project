@@ -1,3 +1,4 @@
+/* Form Styling */
 .chat_form {
     display: flex;
     justify-content: center;
@@ -74,4 +75,58 @@
 #submit_btn {
     text-align: center;
     margin: auto;
+}
+
+.forms > input {
+    width: 20vw; 
+    height: 5vh;
+}
+
+#p_num {
+    width: 42vw; height: 5vh;
+}
+
+#email {
+    width: 42vw; height: 5vh;
+}
+
+#message {
+    width: 42vw; height: 200px;
+}
+
+/* Contact form responsiveness */
+@media screen and (max-width: 600px){
+    .forms {
+        flex-direction: column;
+        margin: auto;
+        /* align-items: flex-end; */
+    }
+
+    .forms > input {
+        width: 100%; 
+        height: 5vh;
+    }
+
+    #lname {
+        margin-left: 0px;
+    }
+
+    .chat_form {
+        justify-content: center;
+    }
+
+    #p_num {
+        width: 100%;
+    }
+    
+    #email {
+        width: 100%;
+    }
+    
+    #message {
+        width: 100%;
+    }
+
+
+
 }
