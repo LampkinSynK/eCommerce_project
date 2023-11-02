@@ -119,6 +119,7 @@ h6 {
     font-size: 2vh;
 }
 
+
 .foot_explore > h6{
     font-size: 7vh;
 }
@@ -131,4 +132,25 @@ h6 {
 
 .bottom_text_right {
     font-size: 1.8vh;
+}
+
+.terms{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.terms > h1 {
+    margin: 30px 0px 30px 0px;
+}
+
+.terms > p{
+    font-size: 20px;
+}
+
+.terms > h2 {
+    font-size: 30px;
+    margin: 30px 0px 30px 0px;
 }
