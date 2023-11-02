@@ -39,7 +39,9 @@ section > h1 {
 .trend_grid {
     display: grid;
     grid-template-columns: repeat(4, 470px);
+    grid-template-rows: 500px;
     gap: 12px;
+    overflow: scroll;
 }
 
 .trend_grid > div {
@@ -48,7 +50,8 @@ section > h1 {
     height: 425px;
     background-color: rgba(255, 139, 139, 0.562);
     margin: auto;
-    border-radius: 18px
+    border-radius: 18px;
+    
 }
 
 .trend_grid > div > img {
@@ -98,7 +101,9 @@ section > h1 {
 .import_grid {
     display: grid;
     grid-template-columns: repeat(4, 470px);
+    grid-template-rows: 500px;
     gap: 12px;
+    overflow: scroll;
 }
 
 .import_grid > div {
@@ -124,8 +129,9 @@ section > h1 {
 .inv_grid {
     display: grid;
     grid-template-columns: repeat(4, 470px);
-    grid-template-rows: repeat(4, 434px);
+    grid-template-rows: repeat(4, 500px);
     gap: 12px;
+    overflow: scroll;
 }
 
 .inv_grid > div {
