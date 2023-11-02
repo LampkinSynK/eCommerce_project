@@ -209,3 +209,8 @@ earlyJDM = () => {
     document.getElementById('price_3').innerHTML = '$90,098';
     document.getElementById('mpg_3').innerHTML = '22/16';
 }
+
+chat = () => {
+    window.location.replace("contact.html");
+}
+
